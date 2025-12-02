@@ -18,21 +18,21 @@ You may also see any lint errors in the console.
 
 ## `landing page`
 
-![alt text](/skill_forge_frontend/readme_images/image0.png)
+![alt text](readme_images/image0.png)
 
 ## `login and register page`
 
-![alt text](/skill_forge_frontend/readme_images/image.png)
-![alt text](/skill_forge_frontend/readme_images/image-1.png)
+![alt text](readme_images/image.png)
+![alt text](readme_images/image-1.png)
 
 ## `Home page`
 
-![alt text](/skill_forge_frontend/readme_images/image-2.png)
+![alt text](readme_images/image-2.png)
 
 ## `Course List page`
 
-![alt text](/skill_forge_frontend/readme_images/image-3.png)
+![alt text](readme_images/image-3.png)
 
 ## `Course Dashboard`
 
-![alt text](/skill_forge_frontend/readme_images/image-4.png)
+![alt text](readme_images/image-4.png)
