@@ -1,9 +1,6 @@
 // src/data/data.js
 
-
-//   COURSE CATEGORIES
-
-
+// COURSE CATEGORIES
 export const topics = [
   "Computer Science Fundamentals",
   "Engineering Mathematics",
@@ -11,15 +8,9 @@ export const topics = [
   "Communication & Soft Skills"
 ];
 
-
-//        COURSES
-
-
+// COURSES
 export const courses = [
-  
   // 1) COMPUTER SCIENCE FUNDAMENTALS
-  
-
   {
     id: "cs1",
     title: "Introduction to Programming",
@@ -32,6 +23,13 @@ export const courses = [
       "Functions & Memory",
       "Basic Data Structures",
       "Debugging & Compilation"
+    ],
+    phases: [
+      { type: "phase", title: "Phase 1: Basics" },
+      { type: "phase", title: "Phase 2: Advanced Concepts" },
+      { type: "test", title: "Test 1" },
+      { type: "test", title: "Test 2" },
+      { type: "final", title: "Final Test" }
     ]
   },
   {
@@ -46,6 +44,13 @@ export const courses = [
       "Trees & Graphs",
       "Sorting & Searching",
       "Time & Space Complexity"
+    ],
+    phases: [
+      { type: "phase", title: "Phase 1: Basics" },
+      { type: "phase", title: "Phase 2: Advanced Concepts" },
+      { type: "test", title: "Test 1" },
+      { type: "test", title: "Test 2" },
+      { type: "final", title: "Final Test" }
     ]
   },
   {
@@ -60,6 +65,13 @@ export const courses = [
       "Memory Management",
       "File Systems",
       "Threads & Concurrency"
+    ],
+    phases: [
+      { type: "phase", title: "Phase 1: Basics" },
+      { type: "phase", title: "Phase 2: Advanced Concepts" },
+      { type: "test", title: "Test 1" },
+      { type: "test", title: "Test 2" },
+      { type: "final", title: "Final Test" }
     ]
   },
   {
@@ -74,13 +86,17 @@ export const courses = [
       "SQL Queries",
       "Transactions & ACID",
       "Indexing & Joins"
+    ],
+    phases: [
+      { type: "phase", title: "Phase 1: Basics" },
+      { type: "phase", title: "Phase 2: Advanced Concepts" },
+      { type: "test", title: "Test 1" },
+      { type: "test", title: "Test 2" },
+      { type: "final", title: "Final Test" }
     ]
   },
 
-  
   // 2) ENGINEERING MATHEMATICS
-  
-
   {
     id: "math1",
     title: "Engineering Mathematics – I",
@@ -93,6 +109,13 @@ export const courses = [
       "Matrices & Determinants",
       "Complex Numbers",
       "Sequences & Series"
+    ],
+    phases: [
+      { type: "phase", title: "Phase 1: Basics" },
+      { type: "phase", title: "Phase 2: Advanced Concepts" },
+      { type: "test", title: "Test 1" },
+      { type: "test", title: "Test 2" },
+      { type: "final", title: "Final Test" }
     ]
   },
   {
@@ -107,6 +130,13 @@ export const courses = [
       "Vector Calculus",
       "Ordinary Differential Equations",
       "Multiple Integrals"
+    ],
+    phases: [
+      { type: "phase", title: "Phase 1: Basics" },
+      { type: "phase", title: "Phase 2: Advanced Concepts" },
+      { type: "test", title: "Test 1" },
+      { type: "test", title: "Test 2" },
+      { type: "final", title: "Final Test" }
     ]
   },
   {
@@ -121,13 +151,17 @@ export const courses = [
       "Sampling & Estimation",
       "Regression",
       "Hypothesis Testing"
+    ],
+    phases: [
+      { type: "phase", title: "Phase 1: Basics" },
+      { type: "phase", title: "Phase 2: Advanced Concepts" },
+      { type: "test", title: "Test 1" },
+      { type: "test", title: "Test 2" },
+      { type: "final", title: "Final Test" }
     ]
   },
 
-
   // 3) DIGITAL COMMUNICATION & ELECTRONICS
-  
-
   {
     id: "ece1",
     title: "Digital Electronics",
@@ -140,6 +174,13 @@ export const courses = [
       "Boolean Algebra",
       "K-Map Simplification",
       "Flip-Flops & Counters"
+    ],
+    phases: [
+      { type: "phase", title: "Phase 1: Basics" },
+      { type: "phase", title: "Phase 2: Advanced Concepts" },
+      { type: "test", title: "Test 1" },
+      { type: "test", title: "Test 2" },
+      { type: "final", title: "Final Test" }
     ]
   },
   {
@@ -154,6 +195,13 @@ export const courses = [
       "LTI Systems",
       "Impulse Response",
       "Convolution"
+    ],
+    phases: [
+      { type: "phase", title: "Phase 1: Basics" },
+      { type: "phase", title: "Phase 2: Advanced Concepts" },
+      { type: "test", title: "Test 1" },
+      { type: "test", title: "Test 2" },
+      { type: "final", title: "Final Test" }
     ]
   },
   {
@@ -168,6 +216,13 @@ export const courses = [
       "Pulse Shaping",
       "Multiplexing",
       "Information Theory"
+    ],
+    phases: [
+      { type: "phase", title: "Phase 1: Basics" },
+      { type: "phase", title: "Phase 2: Advanced Concepts" },
+      { type: "test", title: "Test 1" },
+      { type: "test", title: "Test 2" },
+      { type: "final", title: "Final Test" }
     ]
   },
   {
@@ -182,11 +237,17 @@ export const courses = [
       "Memory Interfacing",
       "I/O Ports",
       "Basic Assembly Programming"
+    ],
+    phases: [
+      { type: "phase", title: "Phase 1: Basics" },
+      { type: "phase", title: "Phase 2: Advanced Concepts" },
+      { type: "test", title: "Test 1" },
+      { type: "test", title: "Test 2" },
+      { type: "final", title: "Final Test" }
     ]
   },
 
-  // 4) COMMUNICATION & SOFT SKILLS (NON-TECH)
-
+  // 4) COMMUNICATION & SOFT SKILLS
   {
     id: "soft1",
     title: "Communication Skills",
@@ -199,6 +260,13 @@ export const courses = [
       "Active Listening",
       "Verbal Fluency",
       "Presentation Techniques"
+    ],
+    phases: [
+      { type: "phase", title: "Phase 1: Basics" },
+      { type: "phase", title: "Phase 2: Advanced Concepts" },
+      { type: "test", title: "Test 1" },
+      { type: "test", title: "Test 2" },
+      { type: "final", title: "Final Test" }
     ]
   },
   {
@@ -213,6 +281,13 @@ export const courses = [
       "Handling Stage Fear",
       "Audience Engagement",
       "Voice Control"
+    ],
+    phases: [
+      { type: "phase", title: "Phase 1: Basics" },
+      { type: "phase", title: "Phase 2: Advanced Concepts" },
+      { type: "test", title: "Test 1" },
+      { type: "test", title: "Test 2" },
+      { type: "final", title: "Final Test" }
     ]
   },
   {
@@ -227,12 +302,18 @@ export const courses = [
       "Puzzles",
       "Data Interpretation",
       "Critical Thinking"
+    ],
+    phases: [
+      { type: "phase", title: "Phase 1: Basics" },
+      { type: "phase", title: "Phase 2: Advanced Concepts" },
+      { type: "test", title: "Test 1" },
+      { type: "test", title: "Test 2" },
+      { type: "final", title: "Final Test" }
     ]
   }
 ];
 
-//        ROADMAPS
-
+// ROADMAPS
 export const roadmaps = [
   {
     id: "r1",

@@ -1,4 +1,5 @@
 import ThemeToggle from "./ThemeToggle";
+import { Bell, User } from "lucide-react";
 
 export default function DashboardHeader() {
   return (
@@ -13,8 +14,8 @@ export default function DashboardHeader() {
       />
 
       <div className="flex items-center space-x-6 text-xl">
-        <button>🔔</button>
-        <button>👤</button>
+        <button><Bell /></button>
+        <button><User /></button>
         <ThemeToggle />
       </div>
     </header>

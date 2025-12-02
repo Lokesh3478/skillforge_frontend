@@ -14,7 +14,7 @@ export default function Signup() {
           Create Your Account
         </h2>
 
-        <form className="flex flex-col gap-5">
+        <form className="flex flex-col gap-5" action="/dashboard">
 
           <div>
             <label className="text-sm opacity-80">Full Name</label>
@@ -22,7 +22,7 @@ export default function Signup() {
               type="text"
               className="w-full p-3 mt-1 rounded-xl bg-white/20 border border-white/30
               placeholder-white/50 focus:outline-none"
-              placeholder="John Doe"
+              placeholder="user name"
             />
           </div>
 
@@ -32,7 +32,7 @@ export default function Signup() {
               type="email"
               className="w-full p-3 mt-1 rounded-xl bg-white/20 border border-white/30
               placeholder-white/50 focus:outline-none"
-              placeholder="you@example.com"
+              placeholder="name@domain.com"
             />
           </div>
 
@@ -42,7 +42,16 @@ export default function Signup() {
               type="password"
               className="w-full p-3 mt-1 rounded-xl bg-white/20 border border-white/30
               placeholder-white/50 focus:outline-none"
-              placeholder="••••••••"
+              placeholder="********"
+            />
+          </div>
+          <div>
+            <label className="text-sm opacity-80">Mobile Number</label>
+            <input
+              type="text"
+              className="w-full p-3 mt-1 rounded-xl bg-white/20 border border-white/30
+              placeholder-white/50 focus:outline-none"
+              placeholder="+91 98765 43210"
             />
           </div>
 

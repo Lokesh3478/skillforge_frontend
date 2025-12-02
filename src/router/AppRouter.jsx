@@ -5,6 +5,7 @@ import Signup from "../pages/Signup";
 import Courses from "../pages/Courses";
 import DashboardLayout from "../pages/DashboardLayout";
 import DashboardHome from "../pages/DashboardHome";
+import CoursePage from "../pages/CourseLayout";
 
 export default function AppRouter() {
   return (
@@ -22,6 +23,7 @@ export default function AppRouter() {
           <Route path="home" element={<DashboardHome />} />
           <Route path="courses" element={<Courses />} />
         </Route>
+        <Route path="/courses/:slug" element={<CoursePage />} />
       </Routes>
     </Router>
   );

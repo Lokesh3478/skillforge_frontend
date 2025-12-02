@@ -34,7 +34,7 @@ export default function Header() {
 
       <div className="flex items-center space-x-4">
         <Link to="/login" className="hover:opacity-70">Login</Link>
-        <Link to="/register" className="hover:opacity-70">Register</Link>
+        <Link to="/signup" className="hover:opacity-70">Register</Link>
         <ThemeToggle />
       </div>
     </nav>
