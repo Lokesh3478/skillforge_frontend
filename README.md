@@ -15,14 +15,24 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ### `page layouts`
+
 ## `landing page`
-![alt text](/skill_forge_frontend/readme_images/image.png)
+
+![alt text](/skill_forge_frontend/readme_images/image0.png)
+
 ## `login and register page`
-![alt text](image.png)
-![alt text](image-1.png)
+
+![alt text](/skill_forge_frontend/readme_images/image.png)
+![alt text](/skill_forge_frontend/readme_images/image-1.png)
+
 ## `Home page`
-![alt text](image-2.png)
+
+![alt text](/skill_forge_frontend/readme_images/image-2.png)
+
 ## `Course List page`
-![alt text](image-3.png)
+
+![alt text](/skill_forge_frontend/readme_images/image-3.png)
+
 ## `Course Dashboard`
-![alt text](image-4.png)
+
+![alt text](/skill_forge_frontend/readme_images/image-4.png)
