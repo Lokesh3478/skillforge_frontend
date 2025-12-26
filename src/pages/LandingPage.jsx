@@ -5,32 +5,28 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import CourseThumbnail from "../components/CourseThumbnail";
 import { useState, useEffect } from "react";
+import { fetchAllCourses } from "../api/services/course";
+
 
 export default function LandingPage() {
-  const courses = [
-    {
-      image: "/images/course1.jpg",
-      title: "Full-Stack Web Development",
-      duration: "12 Weeks",
-    },
-    {
-      image: "/images/course2.jpg",
-      title: "Machine Learning Foundations",
-      duration: "8 Weeks",
-    },
-    {
-      image: "/images/course3.jpg",
-      title: "Data Structures & Algorithms",
-      duration: "10 Weeks",
-    },
-    {
-      image: "/images/course4.jpg",
-      title: "UI/UX Design Essentials",
-      duration: "6 Weeks",
-    },
-  ];
-
+  const [courses, setCourses] = useState([]);
   const [index, setIndex] = useState(0);
+  console.log(courses);
+  useEffect(() => {
+    fetchAllCourses()
+      .then(res => setCourses(res.data))
+      .catch(() => setCourses([]));
+  }, []);
+
+  useEffect(() => {
+    if (courses.length === 0) return;
+
+    const timer = setInterval(() => {
+      setIndex((prev) => (prev + 1) % courses.length);
+    }, 2500);
+
+    return () => clearInterval(timer);
+  }, [courses.length]);
 
   // AUTO SLIDE EVERY 2.5 SECONDS
   useEffect(() => {
@@ -87,12 +83,14 @@ export default function LandingPage() {
               transition={{ duration: 0.6 }}
               className="absolute"
             >
-              <CourseThumbnail
-                image={courses[index].image}
-                title={courses[index].title}
-                duration={courses[index].duration}
-                isCenter={true}
-              />
+              {courses.length > 0 && (
+                <CourseThumbnail
+                  course={courses[index]}
+                  isCenter={true}
+                />
+              )}
+
+
             </motion.div>
 
           </div>

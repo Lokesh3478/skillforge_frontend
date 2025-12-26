@@ -18,7 +18,7 @@ export default function AppRouter() {
         <Route path="/courses" element={<Courses />} />
 
         {/* Dashboard Routes */}
-        <Route path="/dashboard" element={<DashboardLayout />}>
+        <Route path="/student/dashboard" element={<DashboardLayout />}>
           <Route index element={<DashboardHome />} />
           <Route path="home" element={<DashboardHome />} />
           <Route path="courses" element={<Courses />} />

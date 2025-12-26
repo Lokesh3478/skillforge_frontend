@@ -10,14 +10,14 @@ import {
 
 export default function DashboardSidebar() {
   const location = useLocation();
-
+  const BASE_URL = "/student/dashboard";
   const menu = [
-    { name: "Home", icon: <Home size={20} />, path: "/dashboard/home" },
-    { name: "Courses", icon: <BookOpen size={20} />, path: "/dashboard/courses" },
-    { name: "Roadmaps", icon: <ListTree size={20} />, path: "/dashboard/roadmaps" },
-    { name: "Discussions", icon: <MessageCircle size={20} />, path: "/dashboard/discussions" },
-    { name: "Quizzes", icon: <FileQuestion size={20} />, path: "/dashboard/quizzes" },
-    { name: "Help", icon: <HelpCircle size={20} />, path: "/dashboard/help" }
+    { name: "Home", icon: <Home size={20} />, path: `${BASE_URL}/home` },
+    { name: "Courses", icon: <BookOpen size={20} />, path: `${BASE_URL}/courses` },
+    { name: "Roadmaps", icon: <ListTree size={20} />, path: `${BASE_URL}/roadmaps` },
+    { name: "Discussions", icon: <MessageCircle size={20} />, path: `${BASE_URL}/discussions` },
+    { name: "Quizzes", icon: <FileQuestion size={20} />, path: `${BASE_URL}/quizzes` },
+    { name: "Help", icon: <HelpCircle size={20} />, path: `${BASE_URL}/help` }
   ];
 
   return (
