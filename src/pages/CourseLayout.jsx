@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import axiosClient from "../api/axiosClient";
 
 import DashboardHeader from "../components/DashboardHeader";
-import DashboardSidebar from "../components/DashboardSidebar";
+import DashboardSidebar from "../components/DashboardSideBar";
 import CourseContentViewer from "../components/CourseContentViewer";
 import CourseSidebar from "../components/CourseSidebar";
 import CourseTestViewer from "../components/CourseTestViewer";
