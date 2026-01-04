@@ -10,6 +10,7 @@ export default function CourseThumbnail({ course, isCenter }) {
 
   console.log(course);
   console.log(course.durationInSeconds/60)
+  console.log(import.meta.env.VITE_API_BASE_URL);
   return (
     <motion.button
       onClick={handleClick}
