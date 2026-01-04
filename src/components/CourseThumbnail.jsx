@@ -9,6 +9,7 @@ export default function CourseThumbnail({ course, isCenter }) {
   };
 
   console.log(course);
+  console.log(course.durationInSeconds/60)
   return (
     <motion.button
       onClick={handleClick}
@@ -28,7 +29,7 @@ export default function CourseThumbnail({ course, isCenter }) {
 
       <h3 className="text-lg font-semibold">{course.courseName}</h3>
       <p className="text-sm opacity-70">
-        {course.durationInMinutes} mins
+        {Math.floor(course.durationInSeconds / 60)} mins {course.durationInSeconds % 60} secs
       </p>
     </motion.button>
   );

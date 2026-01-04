@@ -24,7 +24,9 @@ export default function AppRouter() {
           <Route path="courses" element={<Courses />} />
         </Route>
         <Route path="/courses/:slug" element={<CoursePage />} />
-      </Routes>
+
+    </Routes>
     </Router>
+    
   );
 }
